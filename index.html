@@ -2,30 +2,119 @@
 <head>
     <meta charset = "utf-8">
     <link rel="stylesheet" href="styles/index.css"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TP1</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
     <div id="bloc1" class = "bloc">
         
         <h1 id = "back" class = "partie1">Back to the future</h1>
-        
-        <img id = "Nokia" class = "partie1" src = "Images/Nokia-3310-Hero.png">
+        <lottie-player id = "lottie" src="https://assets3.lottiefiles.com/packages/lf20_suvqt7by.json" background="transparent"  speed="0.5"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <img id = "Nokia" class = "partie1"src  = "Images/Nokia-3310-Hero.png">
     </div>
    
     <div id="bloc2" class ="bloc">
    
             <h1 id = "great" class = "gr">Great communication department</h1>
         <div id="case">
-            <div class = "Element" id="t1"> </div>
-            <div class = "Element" id="t2"> </div>
-            <div class = "Element" id="t3"> </div>
+            <div class = "Element" id="t1"> 
+                <h3 class = "ET">Iconic rounded form, updated</h3>
+                <p class = "EP">The new Nokia 3310 takes the iconic 
+                    silhouette of the original and reimagines 
+                    it for 2017. The custom designed user interface 
+                    brings a fresh look to a classic, whilst the 2.4”
+                     polarized and curved screen window makes for better 
+                     readability in sunlight.</p>
+            </div>
+
+            <div class = "Element" id="t2"> 
+                <h3 class = "ET">Iconic rounded form, updated</h3>
+                <p class = "EP">Remember when you could leave the house without a charger? Well, with the new Nokia 3310, you can. It comes with a long-lasting battery, so you can talk all day, or leave the phone on standby for up to a month3. When needed, a Micro-USB port makes charging simple.</p>
+
+            </div>
+
+            <div class = "Element" id="t3">
+                <h3 class = "ET">Snake around!</h3>
+                <p class = "EP">Remember when you could leave the house without a charger? Well, with the new Nokia 3310, you can. It comes with a long-lasting battery, so you can talk all day, or leave the phone on standby for up to a month3. When needed, a Micro-USB port makes charging simple.</p>
+
+            </div>
         </div>
-            <div class = "Element" id="t2"> </div>
+            <div class = "Element" id="t2"> 
+                <h3 class = "ET">Four great shades to choose from</h3>
+                <p class = "EP">Remember when you could leave the house without a charger? Well, with the new Nokia 3310, you can. It comes with a long-lasting battery, so you can talk all day, or leave the phone on standby for up to a month3. When needed, a Micro-USB port makes charging simple.</p>
+
+            </div>
         
     </div>
 
     <div id="bloc3" class ="bloc">
+
+        <table id = "table">
+            <tr>
+                <td class = "T">Network</td>
+                <td class = "T">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+            <tr>
+                <td class = "H">Network</td>
+                <td class = "H">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+            <tr>
+                <td class = "T">Network</td>
+                <td class = "T">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+            
+            <tr>
+                <td class = "H">Network</td>
+                <td class = "H">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+            <tr>
+                <td class = "T">Network</td>
+                <td class = "T">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+
+            <tr>
+                <td class = "H">Network</td>
+                <td class = "H">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+            <tr>
+                <td class = "T">Network</td>
+                <td class = "T">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+
+
+            <tr>
+                <td class = "H">Network</td>
+                <td class = "H">Full GSM support, over 9.6kbits/s !</td>
+            </tr>
+
+            
+        </table>
+
     </div>
 
+    <script>
+    $(window).scroll(function(){
+        var scrollPos = $(this).scrollTop();
+        console.log(scrollPos);
+        $('#Nokia').css({
+            'height' : 50 + scrollPos/20 + '%'
+        });
+
+        })
+
+    </script>
+
 </body>
+</html
