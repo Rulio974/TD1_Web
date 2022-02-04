@@ -16,10 +16,7 @@ body, html {
 }
 
 
-
 .partie1{
-
-
 
 padding:20vh;
 margin: 1vh auto 1vh auto;
@@ -28,12 +25,20 @@ margin: 1vh auto 1vh auto;
 
 #Nokia{
     height: 60%;
+     
+}
 
+#lottie{
+    height: 20%;
+    transform: rotate(-45deg);
+    margin-bottom: 60vh;
+    
 }
 
 
 
 #bloc1{
+    position: relative;
     border-bottom-left-radius : 20px;
     border-bottom-right-radius : 20px;
     display: flex;
@@ -43,6 +48,7 @@ margin: 1vh auto 1vh auto;
     font-size: 4vh;
     align-items: center;
     justify-content: center;
+
 
 
 
@@ -60,29 +66,68 @@ margin: 1vh auto 1vh auto;
     height: 80vh;
 
     margin: 10vh auto 10vh auto;
+    
+    
 }
 
 #bloc3{
+    align-items: center;
+    justify-content: center;
+    
+    display: flex;
     border-top-left-radius : 20px;
     border-top-right-radius : 20px;
-    background-color: green;
+    background-color: #fe4c2e;
     width: 100%;
     height: 100vh;
 }
 
+
+#table{
+    
+    border-collapse : collapse;
+    width: 60vh;
+
+}
+
+.T{
+    height:3vh;
+    width: 4vh;
+    background-color: white;
+    text-align: center;
+   
+}
+
+.H{
+    height:3vh;
+    width: 4vh;
+    text-align: center;
+    font-weight: 300;
+    
+   
+}
+
 .Element{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height:120px;
     width: 200px;
     text-align: center;
     padding:20px;
     margin:20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    
+    border: 2px solid #fe4c2e;
 }
 
 
 #great:nth-child(1){
 
     align-self: center;
-    margin-bottom: 50vh;
+    margin-bottom: 20vh;
     font-size: 50px;
     
 }
@@ -95,18 +140,60 @@ margin: 1vh auto 1vh auto;
     display: flex;
 }
 
+.ET{
+
+    font-size: 20px;
+    color: #fe4c2e;
+    
+    
+   
+}
+
+.EP{
+
+    font-size: 12px;
+    
+}
+
+.test{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    clip-path: ellipse(22% 50% at 50% 50%);
+    
+
+
+    height: 105vh;
+    background-color: linear-gradient(112deg, rgba(234,234,234,1) 0%, rgba(237,237,237,1) 99%);
+    background-image: url("../Images/360/Nokia_3310_2017_Warm_Red_360_720_50-1.jpg");
+    object-fit: cover;
+    margin: 10vh auto 10vh auto;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    
+    
+   
+}
+
+.footer{
+    align-items: center;
+    justify-content: center;
+    
+    display: flex;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
+    background-color: #fe4c2e;
+    width: 100%;
+    height: 100vh;
+
+}
 
 
 
-#t1{
-    background-color: orange;
-}
-#t2{
-    background-color: blue;
-}
-#t3{
-    background-color: red;
-}
+
 
 
 
